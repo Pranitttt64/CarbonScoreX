@@ -1,11 +1,51 @@
-frontend/.env
-frontend/node_modules
-backend/.env
-backend/node_modules
-.venv
-__pycache__
-*.pyc
-ml-service/__pycache__
-ml-service/*.pyc
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build output
+frontend/build/
+frontend/dist/
+ml-service/dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+
+# Generated files
+backend/certificates/*.pdf
+backend/uploads/
 *.log
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing
+coverage/
+.nyc_output/
+
+# ML artifacts
+ml-service/models/*.pkl
+ml-service/models/*.joblib
